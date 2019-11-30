@@ -9,37 +9,54 @@
             "ioValues": [
                 {
                     "name": "Radius",
-                    "ioValue": 10
+                    "ioValue": 3
                 },
                 {
                     "name": "Length",
-                    "ioValue": 10
+                    "ioValue": 40
                 },
                 {
                     "name": "Thickness",
-                    "ioValue": 10
+                    "ioValue": 3
+                },
+                {
+                    "name": "Height",
+                    "ioValue": 30
                 }
             ],
             "topLevel": true,
             "allAtoms": [
                 {
                     "atomType": "Input",
+                    "name": "Thickness",
+                    "x": 72,
+                    "y": 70,
+                    "uniqueID": 531700,
+                    "ioValues": [
+                        {
+                            "name": "default value",
+                            "ioValue": 3
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Input",
                     "name": "Length",
-                    "x": 82,
-                    "y": 152,
+                    "x": 72,
+                    "y": 141,
                     "uniqueID": 827751,
                     "ioValues": [
                         {
                             "name": "default value",
-                            "ioValue": 10
+                            "ioValue": 40
                         }
                     ]
                 },
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 257,
-                    "y": 131,
+                    "x": 253,
+                    "y": 102,
                     "uniqueID": 700097,
                     "ioValues": [
                         {
@@ -54,49 +71,133 @@
                 },
                 {
                     "atomType": "Input",
+                    "name": "Height",
+                    "x": 118,
+                    "y": 276,
+                    "uniqueID": 355002,
+                    "ioValues": [
+                        {
+                            "name": "default value",
+                            "ioValue": 30
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "Equation",
+                    "x": 287,
+                    "y": 253,
+                    "uniqueID": 790093,
+                    "ioValues": [
+                        {
+                            "name": "L",
+                            "ioValue": 10
+                        }
+                    ],
+                    "currentEquation": "L/-2"
+                },
+                {
+                    "atomType": "Input",
                     "name": "Radius",
-                    "x": 263,
-                    "y": 225,
+                    "x": 385,
+                    "y": 35,
                     "uniqueID": 875188,
                     "ioValues": [
                         {
                             "name": "default value",
+                            "ioValue": 3
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 368,
+                    "y": 138,
+                    "uniqueID": 300079,
+                    "ioValues": [
+                        {
+                            "name": "height",
                             "ioValue": 10
                         }
                     ]
                 },
                 {
-                    "atomType": "Input",
-                    "name": "Thickness",
-                    "x": 445,
-                    "y": 124,
-                    "uniqueID": 531700,
+                    "atomType": "Equation",
+                    "name": "Equation",
+                    "x": 418,
+                    "y": 231,
+                    "uniqueID": 332127,
                     "ioValues": [
                         {
-                            "name": "default value",
+                            "name": "R",
                             "ioValue": 10
+                        },
+                        {
+                            "name": "T",
+                            "ioValue": 10
+                        }
+                    ],
+                    "currentEquation": "R+T"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "Equation",
+                    "x": 565,
+                    "y": 69,
+                    "uniqueID": 613129,
+                    "ioValues": [
+                        {
+                            "name": "R",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "T",
+                            "ioValue": 10
+                        }
+                    ],
+                    "currentEquation": "R+T/2"
+                },
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 621,
+                    "y": 151,
+                    "uniqueID": 253435,
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 15
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -5
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 20
                         }
                     ]
                 },
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Code Bend",
-                    "x": 660,
+                    "x": 659,
                     "y": 231,
                     "uniqueID": 845283,
                     "projectID": "223926550",
                     "ioValues": [
                         {
                             "name": "Interior Bend Radius",
-                            "ioValue": 3
+                            "ioValue": 10
                         },
                         {
                             "name": "Length",
-                            "ioValue": 60
+                            "ioValue": 10
                         },
                         {
                             "name": "Thickness",
-                            "ioValue": 3
+                            "ioValue": 10
                         },
                         {
                             "name": "K Factor",
@@ -112,7 +213,115 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap1ID": 531700,
+                    "ap2ID": 700097
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "T",
+                    "ap1ID": 531700,
+                    "ap2ID": 613129
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Thickness",
+                    "ap1ID": 531700,
+                    "ap2ID": 845283
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "T",
+                    "ap1ID": 531700,
+                    "ap2ID": 332127
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap1ID": 827751,
+                    "ap2ID": 700097
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Length",
+                    "ap1ID": 827751,
+                    "ap2ID": 845283
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "L",
+                    "ap1ID": 827751,
+                    "ap2ID": 790093
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 700097,
+                    "ap2ID": 300079
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap1ID": 355002,
+                    "ap2ID": 300079
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap1ID": 790093,
+                    "ap2ID": 253435
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "R",
+                    "ap1ID": 875188,
+                    "ap2ID": 613129
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Interior Bend Radius",
+                    "ap1ID": 875188,
+                    "ap2ID": 845283
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "R",
+                    "ap1ID": 875188,
+                    "ap2ID": 332127
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 300079,
+                    "ap2ID": 253435
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap1ID": 332127,
+                    "ap2ID": 253435
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap1ID": 613129,
+                    "ap2ID": 253435
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Attached Tab",
+                    "ap1ID": 253435,
+                    "ap2ID": 845283
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 845283
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
