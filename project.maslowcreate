@@ -6,9 +6,104 @@
             "x": 0,
             "y": 0,
             "uniqueID": 984916,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Radius",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Thickness",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": true,
             "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Length",
+                    "x": 82,
+                    "y": 152,
+                    "uniqueID": 827751,
+                    "ioValues": [
+                        {
+                            "name": "default value",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 257,
+                    "y": 131,
+                    "uniqueID": 700097,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Radius",
+                    "x": 263,
+                    "y": 225,
+                    "uniqueID": 875188,
+                    "ioValues": [
+                        {
+                            "name": "default value",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Thickness",
+                    "x": 445,
+                    "y": 124,
+                    "uniqueID": 531700,
+                    "ioValues": [
+                        {
+                            "name": "default value",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "GitHubMolecule",
+                    "name": "Code Bend",
+                    "x": 660,
+                    "y": 231,
+                    "uniqueID": 845283,
+                    "projectID": "223926550",
+                    "ioValues": [
+                        {
+                            "name": "Interior Bend Radius",
+                            "ioValue": 3
+                        },
+                        {
+                            "name": "Length",
+                            "ioValue": 60
+                        },
+                        {
+                            "name": "Thickness",
+                            "ioValue": 3
+                        },
+                        {
+                            "name": "K Factor",
+                            "ioValue": 0.4
+                        }
+                    ]
+                },
                 {
                     "atomType": "Output",
                     "name": "Output",
