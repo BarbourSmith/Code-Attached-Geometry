@@ -8,7 +8,7 @@
             "uniqueID": 984916,
             "ioValues": [
                 {
-                    "name": "Radius",
+                    "name": "Thickness",
                     "ioValue": 3
                 },
                 {
@@ -16,12 +16,12 @@
                     "ioValue": 40
                 },
                 {
-                    "name": "Thickness",
-                    "ioValue": 3
-                },
-                {
                     "name": "Height",
                     "ioValue": 30
+                },
+                {
+                    "name": "Radius",
+                    "ioValue": 3
                 }
             ],
             "topLevel": true,
@@ -61,11 +61,11 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 40
                         }
                     ]
                 },
@@ -91,7 +91,7 @@
                     "ioValues": [
                         {
                             "name": "L",
-                            "ioValue": 10
+                            "ioValue": 40
                         }
                     ],
                     "currentEquation": "L/-2"
@@ -118,7 +118,7 @@
                     "ioValues": [
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 30
                         }
                     ]
                 },
@@ -131,11 +131,11 @@
                     "ioValues": [
                         {
                             "name": "R",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "T",
-                            "ioValue": 10
+                            "ioValue": 3
                         }
                     ],
                     "currentEquation": "R+T"
@@ -149,11 +149,11 @@
                     "ioValues": [
                         {
                             "name": "R",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "T",
-                            "ioValue": 10
+                            "ioValue": 3
                         }
                     ],
                     "currentEquation": "R+T/2"
@@ -167,15 +167,15 @@
                     "ioValues": [
                         {
                             "name": "xDist",
-                            "ioValue": 15
+                            "ioValue": 4.5
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -5
+                            "ioValue": -20
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 20
+                            "ioValue": 6
                         }
                     ]
                 },
@@ -189,15 +189,15 @@
                     "ioValues": [
                         {
                             "name": "Interior Bend Radius",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "Length",
-                            "ioValue": 10
+                            "ioValue": 40
                         },
                         {
                             "name": "Thickness",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "K Factor",
@@ -209,17 +209,11 @@
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1316,
-                    "y": 164,
+                    "y": 163.5,
                     "ioValues": []
                 }
             ],
             "allConnectors": [
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "y length",
-                    "ap1ID": 531700,
-                    "ap2ID": 700097
-                },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "T",
@@ -241,7 +235,7 @@
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "x length",
-                    "ap1ID": 827751,
+                    "ap1ID": 531700,
                     "ap2ID": 700097
                 },
                 {
@@ -255,6 +249,12 @@
                     "ap2Name": "L",
                     "ap1ID": 827751,
                     "ap2ID": 790093
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap1ID": 827751,
+                    "ap2ID": 700097
                 },
                 {
                     "ap1Name": "geometry",
